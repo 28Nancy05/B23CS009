@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lab Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #F3F4F9;
+            color: #333;
+        }
+
+        header {
+            background: #7C7CA0;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #7C7CA0;
+            margin: 20px 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+            padding: 10px;
+            border: 1px solid #e1e1e1;
+            border-radius: 5px;
+            background: #F9F9F9;
+        }
+
+        a {
+            text-decoration: none;
+            color: #5D3FD3;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #E6E6FA;
+            margin-top: 20px;
+        }
+
+        .image-slideshow {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .image {
+            display: none;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .image.show {
+            display: block;
+        }
+
+        .next-button, .previous-button {
+            padding: 10px 20px;
+            background-color: #7C7CA0;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .next-button:hover, .previous-button:hover {
+            background-color: #5D3FD3;
+        }
+
+        .next-button {
+            float: right;
+        }
+
+        .previous-button {
+            float: left;
+        }
+
+        .image-slideshow::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+
+    <header>
+        <h1>CS-255 Lab Project</h1>
+        <p>Welcome to my lab project repository!</p>
+    </header>
+
+    <main>
+        <section id="projects">
+            <h2>Assignments</h2>
+            <ul>
+                <li>
+                    <strong>Assignment-1</strong>
+                    <p>Objective : Create your own portfolio using HTML. Using the mentioned tags in the page is must. Within the body use the following tags:</p>
+                    <a href="https://github.com/28Nancy05/Lab-1">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-2</strong>
+                    <p>Objective: Working with images and tables. Creating the given table in HTML using table tags. Inserting images inside HTML frames and setting up various properties.</p>
+                    <a href="https://github.com/28Nancy05/lab-2">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-3</strong>
+                    <p>Objective : Creating a Student Registration HTML form. The details asked should be: First-Name, Last-Name, Email ID, Mobile Number, Address, Hobbies, Course, Gender etc.</p>
+                    <a href="https://github.com/28Nancy05/Lab-3">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-4</strong>
+                    <p>Objective: Linking multiple Webpages together. One page must open the table created in the previous assignment. Second task is to insert an image which has some element, on clicking over those elements their description should open in new webpage.</p>
+                    <a href="https://github.com/28Nancy05/Lab-4">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-5</strong>
+                    <p>Objective: Working with HTML div and ID. On the existing Webpage, create multiple divisions and classes. Apply CSS Box Model over the same. Implementing CSS IDs, classes, and CSS Styling over the lists and tables.</p>
+                    <a href="https://github.com/28Nancy05/lab5">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-6</strong>
+                    <p>Objective: Design a question paper of ten questions using CSS styling (background, text format, fonts) and some CSS colors. Assume a proper format for the question paper. Inline and Embedded</p>
+                    <a href="https://github.com/28Nancy05/lab-6">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-7</strong>
+                    <p>Objective: Insert various JavaScript syntax. Create dialog boxes using JavaScript and use them in the question paper created in the last assignment.</p>
+                    <a href="https://github.com/28Nancy05/lab-7">View Repository</a>
+                </li>
+                <li>
+                    <strong>Assignment-8</strong>
+                    <p>Objective: Create various user-defined functions to perform some arithmetic operations and write one JavaScript program to create an image slideshow, simple animations using JavaScript.</p>
+                    <a href="https://github.com/28Nancy05/lab-8">View Repository</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Nancy Tinglalnei is an enthusiastic first-year engineering student at National Institute of Technology, Meghalaya, exploring the exciting world of  Computer Science and Engineering. With a knack for problem-solving and a curiosity for how things work, she is eager to dive into hands-on projects and collaborate with peers.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: b23cs009@nitm.ac.in</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Lab Projects</p>
+    </footer>
+
+    <h1>Sample Output</h1>
+    <div class="image-slideshow">
+        <img class="image show" src="a1.jpeg" alt="Image 1">
+        <img class="image" src="a2.jpeg" alt="Image 2">
+        <img class="image" src="a3.jpeg" alt="Image 3">
+        <img class="image" src="a4.jpeg" alt="Image 4">
+        <img class="image" src="Lab4.jpg" alt="Image 5">
+        <img class="image" src="a6.jpeg" alt="Image 6">
+        <img class="image" src="a7.jpeg" alt="Image 7">
+        <img class="image" src="a8.jpeg" alt="Image 8">
+        <img class="image" src="s1.jpeg" alt="Image 9">
+        <img class="image" src="s2.jpeg" alt="Image 10">
+        <img class="image" src="s3.jpeg" alt="Image 11">
+        <img class="image" src="s4.jpeg" alt="Image 12">
+
+        <button class="previous-button">Previous</button>
+        <button class="next-button">Next</button>
+    </div>
+
+    <script>
+        const images = document.querySelectorAll('.image');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            images.forEach((img, i) => {
+                img.classList.toggle('show', i === index);
+            });
+        }
+
+        function showNextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+
+        function showPreviousImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+
+        function startSlideshow() {
+            setInterval(showNextImage, 3000);
+        }
+
+        document.querySelector('.next-button').addEventListener('click', showNextImage);
+        document.querySelector('.previous-button').addEventListener('click', showPreviousImage);
+
+        showImage(currentIndex);
+        startSlideshow();
+    </script>
+</body>
+</html>
